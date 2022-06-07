@@ -8,12 +8,98 @@ html {
   font-size: 62.5%;
 }
 
+:root {
+  --gray: #5F6368;
+  --blue: #4285F4;
+  --red: #EA4335;
+  --yellow: #FBBC05;
+  --green: #34A853;
+
+  --apps-size: 1.5rem;
+  --apps-dot-size: 0.3rem;
+  --apps-dot-margin: .1rem;
+
+  --user-size: 2.5rem;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.3rem;
 }
 
-.googool {
+/* ************ HEADER ********** */
+nav {
+  height: 4rem;
+  padding: 0 1rem;
+  
+  display: flex;
+  justify-content: space-between;
+}
+
+.options {
+  width: 10rem;
+  color: var(--gray);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.apps-user {
+  width: 5.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.apps {
+  width: var(--apps-size);
+  height: var(--apps-size);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.apps div {
+  background-color: var(--gray);
+  width: var(--apps-dot-size);
+  height: var(--apps-dot-size);
+  border-radius: var(--apps-dot-size);
+  margin: var(--apps-dot-margin);
+}
+
+.user {
+  width: var(--user-size);
+  height: var(--user-size);
+  border-radius: 5rem;
+  overflow: hidden;
+}
+
+.user img {
+  width: 100%;
+  /* border-radius: 5rem; */
+}
+
+
+
+/* *********** MAIN *********** */
+.gogool {
+  max-width: 50rem;
+  max-height: 20rem;
   font-family: 'Jost', sans-serif;
   font-size: 10rem;
+
+  display: flex;
+  justify-content: center;
 }
+
+.gogool span {
+  margin-right: -1%;
+  font-size: 90%;
+}
+
+.g1 { color: var(--blue); }
+.o2 { color: var(--red); }
+.g3 { color: var(--yellow); }
+.o4 { color: var(--blue); }
+.o5 { color: var(--green); }
+.l6 { color: var(--red); }

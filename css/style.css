@@ -47,12 +47,51 @@ nav {
 }
 
 .options {
-  width: 10rem;
   color: var(--gray);
 
   display: flex;
-  justify-content: space-between;
+  justify-content: stretch;
   align-items: center;
+
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.menu {
+  height: 1.2rem;
+  margin-right: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.menu div {
+  background-color: var(--gray);
+  width: 1.8rem;
+  height: .14em;
+}
+
+.gmail {
+  width: 0;
+  overflow: hidden;
+}
+
+.all {
+  color: var(--blue);
+  border-bottom: 2px solid var(--blue);
+  
+  height: 100%;
+  margin-right: 2rem;
+
+  display: flex;
+  align-items: center;
+}
+.all span {
+  padding: 0 1rem;
+}
+ 
+.images {
+  text-transform: uppercase;
 }
 
 .apps-user {

@@ -33,9 +33,9 @@ html {
 
   --user-size: 3rem;
 
-  --font-size-gogool: 9rem;
-  --paddig-gogool: 14rem 0 2rem;
-  --kerning-gogool: calc(var(--font-size-gogool)/-40);
+  --font-size-googol: 9rem;
+  --paddig-googol: 14rem 0 2rem;
+  --kerning-googol: calc(var(--font-size-googol)/-40);
   --button-voice-size: 0;
 
   --border-h: 0 2rem;
@@ -139,24 +139,24 @@ main {
   height: calc(100vh - var(--nav-height));
 }
 
-/* GOGOOL */
-.gogool {
+/* GOOGOL */
+.googol {
   font-family: 'Jost', sans-serif;
-  font-size: var(--font-size-gogool);
+  font-size: var(--font-size-googol);
 
-  padding: var(--paddig-gogool);
+  padding: var(--paddig-googol);
 
   display: flex;
   justify-content: center;
 }
 
-.gogool span {
-  margin-right: var(--kerning-gogool);
+.googol span {
+  margin-right: var(--kerning-googol);
 }
 .g1 { color: var(--blue); }
 .o2 { color: var(--red); }
-.g3 { color: var(--yellow); }
-.o4 { color: var(--blue); }
+.o3 { color: var(--yellow); }
+.g4 { color: var(--blue); }
 .o5 { color: var(--green); }
 .l6 { color: var(--red); }
 

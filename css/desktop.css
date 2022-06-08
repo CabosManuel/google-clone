@@ -1,0 +1,118 @@
+:root {
+  --black: #202124;
+
+  --button-voice-size: 2.4rem;
+  --paddig-gogool: 18rem 0 2rem;
+}
+
+/* ******** HEADER ******* */
+nav {
+  justify-content: end;
+}
+
+.menu {
+  width: 0;
+  overflow: hidden;
+  margin: 0;
+}
+
+.options {
+  color: var(--black);
+  font-size: 1.3rem;
+  font-weight: normal;
+  margin-right: 2rem;
+}
+
+.gmail {
+  width: auto;
+  margin-right: 2rem;
+  overflow: visible;
+}
+
+.all {
+  width: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.images {
+  text-transform: none;
+}
+
+/* ******* MAIN ******** */
+.search-box {
+  width: 58rem;
+  height: 4.7rem;
+  padding: 0 2rem;
+}
+
+/* SEARCH BUTTONS */
+.search-buttons {
+  height: 5rem;
+  overflow: visible;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 2rem 0;
+}
+
+.search-buttons a {
+  background-color: var(--gray-footer);
+  color: var(--black);
+  font-size: 1.4rem;
+
+  padding: .9rem 2rem;
+  margin: 0 1rem;
+  border-radius: 0.3rem;
+
+  border: 1px solid transparent;
+
+  /* No seleccionar texto */
+  -webkit-user-select: none;  
+  -moz-user-select: none;    
+  -ms-user-select: none;      
+  user-select: none;
+}
+
+/* *********** FOOTER *********** */
+footer {
+  position: absolute;
+  bottom: 0;
+}
+
+.location {
+  height: 4.8rem;
+  position: relative;
+
+  align-items: center;
+}
+
+.location span {
+  width: fit-content;
+  height: fit-content;
+  border-bottom: none;
+}
+
+.redirections {
+  font-size: 1.4rem;
+  padding: 1rem;
+
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* *********** EVENTS *********** */
+.search-buttons a:hover {
+  filter: drop-shadow(0 0 1px var(--gray));
+  border: 0px;
+  cursor: pointer;
+
+  border: 1px solid transparent;
+}
+
+.search-buttons a:active {
+  filter: none;
+  border: 1px solid var(--blue);
+}
